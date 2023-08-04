@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    background-image: linear-gradient(to right, #ffffff, #9ba3eb);
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding:2.5rem;
+
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    
+}
+.form-label{    
+    font-weight:bold;
+    margin:10px;
+}
+    
+
+.btn {
+    display: block;
+    margin-left: auto;
+}
+
+.card-body{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+    margin: 2em;
+    background-image: linear-gradient(135deg, #e8ebff 50%, #fafaff, #e8ebff);
+    box-shadow: 3px 3px 12px 1px #646fd4;
+    border-radius: 5px;
+}
+.card-title{
+    text-decoration:none; 
+    padding-bottom:10px;
+    margin-left:0;
+}
+
+.card-title:hover{
+    cursor: pointer;
+}
+.about{
+    width:80%;
+    margin:auto;
+    padding:2rem;
+    border-radius:10px;
+    margin-top: 30px;
+}
+
+#bs{
+    -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative; 
+}
+
+#bs:active, #bs:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+#bs:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+#bs:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}

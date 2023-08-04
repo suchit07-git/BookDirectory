@@ -1,0 +1,15 @@
+<%-include("partials/header", {page: "Books"})-%>
+
+<div>
+        <div>
+               <h2 class="card-title"><%= books.title %></h2>
+                    <h6>- <%= books.author.first_name %> <%= books.author.last_name %> (<%= books.author.age %>)</h6>
+                    <p>
+                        Published on: <%= books.published.toLocaleDateString() %>
+                        <br>
+                        Quantity: <%= books.quantity %>
+                    </p>
+                </div>
+</div>
+
+<%-include("partials/footer")-%>

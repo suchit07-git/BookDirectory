@@ -1,0 +1,27 @@
+<%-include("partials/header", {page: "Books"})-%>
+
+<div class="card">
+    <% books.forEach(function(book){ %>
+       
+                <div class="card-body">
+                    <div style = "padding:10px;display:flex;justify-content: flex-start;flex-direction:column">
+                    <a href = "/books/<%= book._id %>" class="card-title" ><h4 ><%= book.title %></h4></a>
+                    <h6 class="card-subtitle mb-2 text-muted" style = "margin-left:10px;">-- <%= book.author.first_name %> <%= book.author.last_name %> (<%= book.author.age %>)</h6>
+                </div>
+                    <p >
+                        Published on: <%= book.published.toLocaleDateString() %>
+                        <br>
+                        Quantity: <%= book.quantity %>
+                    </p>
+                    <div>
+                    <a href = "/set/<%= book._id %>"><button style = "color:white;background-color:green;border-radius:6px;">Edit</button></a>
+                    <a href = "/delete/<%= book._id %>"><button style = "color:white;background-color:red;border-radius:6px;">Delete</button></a>
+                    </div>
+                </div>
+    <% }) %>
+    <% if (books.length == 0) { %>
+        <h3>No Books to display</h3>
+    <% } %>
+</div>
+
+<%-include("partials/footer")-%>
